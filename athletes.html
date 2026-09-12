@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-contrast="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wall of Champions & Hall of Fame | KREEDA INDIA</title>
+  <meta name="description" content="Explore India's greatest sporting champions, Olympic medalists, national record holders, and Hall of Fame legends on KREEDA INDIA.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Tricolor Accent Ribbon -->
+  <div class="top-tricolor-bar" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="header-main" id="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" title="Kreeda India National Sports Portal">
+        <div class="emblem-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">KREEDA INDIA</span>
+          <span class="brand-tagline">National Sports Portal</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#sports" class="nav-link">Sports</a>
+        <a href="athletes.html" class="nav-link active">Champions & Records</a>
+        <a href="events.html" class="nav-link">National Calendar</a>
+        <a href="index.html#stadiums" class="nav-link">Stadiums & SAI</a>
+        <a href="index.html#schemes" class="nav-link">Grants & TOPS</a>
+        <a href="registration.html" class="nav-link" style="color: var(--olympic-gold); font-weight: 800;">
+          Talent ID Card ✨
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-trigger-btn" id="btn-search-trigger">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+          <kbd class="kbd-shortcut">Ctrl K</kbd>
+        </button>
+
+        <button class="btn-icon" id="btn-theme-toggle" title="Toggle Theme">🌙</button>
+        <button class="btn-icon" id="btn-contrast-toggle" title="High Contrast">👁️</button>
+        <button class="btn-icon" id="btn-cart-trigger" title="Cart">🛒<span class="cart-count" id="cart-badge-count">0</span></button>
+        <button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: calc(var(--header-height) + 40px);">
+    <!-- Hero Banner for Athletes Page -->
+    <section class="section-wrapper" style="padding: 40px 0 60px;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 40px;">
+          <span class="section-tag">National Pride</span>
+          <h1 class="section-title">Hall of Fame & Olympic Legends</h1>
+          <p class="section-subtitle">
+            Meet the iconic heroes who wrote golden chapters in Indian sports history. Discover their career statistics, milestone achievements, and training philosophies.
+          </p>
+        </div>
+
+        <!-- Olympic & Major Games Medal Showcase Banner -->
+        <div style="background: linear-gradient(135deg, #0d1a42, #070d24); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 30px; margin-bottom: 50px; box-shadow: var(--shadow-lg);">
+          <div style="text-align: center; margin-bottom: 24px;">
+            <span style="font-size: 0.8rem; font-weight: 800; color: var(--olympic-gold); text-transform: uppercase; letter-spacing: 2px;">
+              ⭐ Bharat's All-Time International Medals Tally
+            </span>
+            <h3 style="font-size: 1.6rem; color: #FFFFFF; margin-top: 6px;">Olympic & World Podium Milestones</h3>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
+            <div style="background: rgba(255, 215, 0, 0.1); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: var(--radius-md); padding: 20px;">
+              <div style="font-size: 2.2rem; font-weight: 900; color: var(--olympic-gold);">🥇 10</div>
+              <div style="font-size: 0.9rem; font-weight: 700; color: #FFFFFF; margin-top: 4px;">Olympic Gold Medals</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">8 Field Hockey, 1 Shooting, 1 Athletics</div>
+            </div>
+
+            <div style="background: rgba(226, 232, 240, 0.1); border: 1px solid rgba(226, 232, 240, 0.3); border-radius: var(--radius-md); padding: 20px;">
+              <div style="font-size: 2.2rem; font-weight: 900; color: #E2E8F0;">🥈 10</div>
+              <div style="font-size: 0.9rem; font-weight: 700; color: #FFFFFF; margin-top: 4px;">Olympic Silver Medals</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Athletics, Badminton, Wrestling, Weightlifting</div>
+            </div>
+
+            <div style="background: rgba(205, 127, 50, 0.1); border: 1px solid rgba(205, 127, 50, 0.3); border-radius: var(--radius-md); padding: 20px;">
+              <div style="font-size: 2.2rem; font-weight: 900; color: #CD7F32;">🥉 21</div>
+              <div style="font-size: 0.9rem; font-weight: 700; color: #FFFFFF; margin-top: 4px;">Olympic Bronze Medals</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Boxing, Shooting, Wrestling, Hockey, Tennis</div>
+            </div>
+
+            <div style="background: rgba(0, 229, 255, 0.1); border: 1px solid rgba(0, 229, 255, 0.3); border-radius: var(--radius-md); padding: 20px;">
+              <div style="font-size: 2.2rem; font-weight: 900; color: var(--electric-cyan);">🏅 107</div>
+              <div style="font-size: 0.9rem; font-weight: 700; color: #FFFFFF; margin-top: 4px;">Asian Games 2023 Record</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Historic 100+ Medal Benchmark Crossed</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Athletes by Sport -->
+        <div class="filter-tabs" style="margin-bottom: 35px;">
+          <button class="filter-tab-btn active" data-sport-filter="all">All Champions</button>
+          <button class="filter-tab-btn" data-sport-filter="Athletics">Track & Field</button>
+          <button class="filter-tab-btn" data-sport-filter="Badminton">Badminton</button>
+          <button class="filter-tab-btn" data-sport-filter="Hockey">Field Hockey</button>
+          <button class="filter-tab-btn" data-sport-filter="Shooting">Shooting</button>
+          <button class="filter-tab-btn" data-sport-filter="Kabaddi">Kabaddi</button>
+          <button class="filter-tab-btn" data-sport-filter="Para Archery">Para Sports</button>
+        </div>
+
+        <!-- Athletes Grid -->
+        <div class="athletes-grid" id="athletes-grid">
+          <!-- Populated dynamically by data.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <div class="modal-backdrop" id="athlete-detail-modal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div id="athlete-modal-content"></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="sport-detail-modal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div id="sport-modal-content"></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="search-palette-modal">
+    <div class="modal-dialog search-palette-dialog">
+      <div class="search-bar-wrap">
+        <span style="font-size: 1.2rem;">🔍</span>
+        <input type="text" id="palette-search-input" placeholder="Type sport, athlete name, stadium, or scheme..." autofocus>
+        <kbd class="kbd-shortcut">ESC</kbd>
+      </div>
+      <div class="search-results-list" id="palette-results-list"></div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer-backdrop" id="cart-drawer-backdrop">
+    <div class="cart-drawer">
+      <div class="cart-drawer-head">
+        <h3>Team India Sports Kit (🛒)</h3>
+        <button id="btn-cart-close" style="background: none; color: white; font-size: 1.3rem; cursor: pointer;">✕</button>
+      </div>
+      <div class="cart-drawer-body" id="cart-items-container"></div>
+      <div class="cart-drawer-foot">
+        <div class="cart-total-row">
+          <span>Subtotal:</span>
+          <span id="cart-subtotal-val" style="color: var(--olympic-gold);">₹0</span>
+        </div>
+        <button class="btn-primary-glow" id="btn-checkout" style="width: 100%; justify-content: center;">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 KREEDA INDIA • Government of India National Sports Portal.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Home</a>
+          <a href="events.html">National Calendar</a>
+          <a href="registration.html">Athlete Registration</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Extra filter logic for Athletes page
+    document.addEventListener('DOMContentLoaded', () => {
+      const sportFilterBtns = document.querySelectorAll('[data-sport-filter]');
+      sportFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          sportFilterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.getAttribute('data-sport-filter');
+          const grid = document.getElementById('athletes-grid');
+          if (!grid || !window.KREEDA_DATA) return;
+          
+          const filtered = filter === 'all' 
+            ? window.KREEDA_DATA.athletes 
+            : window.KREEDA_DATA.athletes.filter(a => a.sport.toLowerCase().includes(filter.toLowerCase()));
+            
+          grid.innerHTML = filtered.map(athlete => `
+            <div class="athlete-card" data-athlete-id="${athlete.id}">
+              <div class="athlete-card-banner">
+                <span class="athlete-banner-badge">🏅 ${athlete.rank}</span>
+                <div class="athlete-avatar-circle" style="background: linear-gradient(135deg, ${athlete.badgeColor}, #000);">
+                  ${athlete.avatarInitial}
+                </div>
+              </div>
+              <div class="athlete-card-content">
+                <h3>${athlete.name}</h3>
+                <div class="athlete-sport-tag">${athlete.sport}</div>
+                <div class="athlete-accolades">🏆 ${athlete.title}</div>
+                <div class="athlete-stats-strip">
+                  <div class="athlete-stat-mini">
+                    <h6>State</h6>
+                    <span>${athlete.state.split(' ')[0]}</span>
+                  </div>
+                  <div class="athlete-stat-mini">
+                    <h6>Record</h6>
+                    <span>${athlete.personalBest}</span>
+                  </div>
+                </div>
+                <button class="athlete-view-btn">View Hall of Fame Profile →</button>
+              </div>
+            </div>
+          `).join('');
+
+          grid.querySelectorAll('.athlete-card').forEach(card => {
+            card.addEventListener('click', () => {
+              const id = card.getAttribute('data-athlete-id');
+              const athlete = window.KREEDA_DATA.athletes.find(a => a.id === id);
+              if (athlete) {
+                const modal = document.getElementById('athlete-detail-modal');
+                const content = document.getElementById('athlete-modal-content');
+                if (modal && content) {
+                  content.innerHTML = `
+                    <div style="padding: 30px;">
+                      <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 24px;">
+                        <div style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--saffron-primary), var(--olympic-gold)); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; color: white; border: 3px solid #FFF;">
+                          ${athlete.avatarInitial}
+                        </div>
+                        <div>
+                          <span style="font-size: 0.75rem; font-weight: 800; color: var(--olympic-gold); text-transform: uppercase;">HALL OF FAME SPOTLIGHT</span>
+                          <h2 style="font-size: 1.8rem; margin: 4px 0;">${athlete.name}</h2>
+                          <p style="color: var(--electric-cyan); font-weight: 700; font-size: 0.95rem;">${athlete.sport} • ${athlete.state}</p>
+                        </div>
+                      </div>
+                      <blockquote style="padding: 14px 18px; background: rgba(255, 103, 31, 0.1); border-left: 4px solid var(--saffron-primary); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-style: italic; color: #FFFFFF; font-size: 0.95rem; margin-bottom: 24px;">
+                        "${athlete.quote}"
+                      </blockquote>
+                      <div style="margin-bottom: 20px;">
+                        <h4 style="font-size: 1rem; color: #FFFFFF; margin-bottom: 8px;">Career Biography</h4>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">${athlete.bio}</p>
+                      </div>
+                      <button class="btn-primary-glow" style="width: 100%; justify-content: center;" onclick="document.getElementById('athlete-detail-modal').classList.remove('open')">
+                        Close Profile
+                      </button>
+                    </div>
+                  `;
+                  modal.classList.add('open');
+                }
+              }
+            });
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

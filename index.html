@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-contrast="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KREEDA INDIA | National Sports Ecosystem & Athlete Development Portal</title>
+  <meta name="description" content="KREEDA INDIA is the apex national sports platform uniting Olympic and indigenous Indian sports, athlete talent hunt, live scoreboards, national stadium facilities, and champions showcase.">
+  <meta name="keywords" content="Kreeda India, Indian Sports, Khelo India, Kabaddi, Olympics India, Neeraj Chopra, Sports Authority of India, National Games">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Patriotic Tricolor Accent Ribbon -->
+  <div class="top-tricolor-bar" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="header-main" id="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" title="Kreeda India National Sports Portal">
+        <div class="emblem-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">KREEDA INDIA</span>
+          <span class="brand-tagline">राष्ट्रीय खेल विकास पोर्टल</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="#sports" class="nav-link">Sports <span class="nav-badge">12 Disciplines</span></a>
+        <a href="athletes.html" class="nav-link">Champions & Records</a>
+        <a href="events.html" class="nav-link">National Calendar</a>
+        <a href="#stadiums" class="nav-link">Stadiums & SAI</a>
+        <a href="#schemes" class="nav-link">Grants & TOPS</a>
+        <a href="registration.html" class="nav-link" style="color: var(--olympic-gold); font-weight: 800;">
+          Talent ID Card ✨
+        </a>
+      </nav>
+
+      <!-- Header Action Utilities -->
+      <div class="header-actions">
+        <!-- Quick Search (Ctrl+K) -->
+        <button class="search-trigger-btn" id="btn-search-trigger" title="Quick Search (Ctrl+K)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+          <kbd class="kbd-shortcut">Ctrl K</kbd>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="btn-icon" id="btn-theme-toggle" title="Toggle Dark/Light Mode">
+          🌙
+        </button>
+
+        <!-- High Contrast Accessibility -->
+        <button class="btn-icon" id="btn-contrast-toggle" title="Toggle High Contrast Mode">
+          👁️
+        </button>
+
+        <!-- Cart Drawer Trigger -->
+        <button class="btn-icon" id="btn-cart-trigger" title="Official Team India Store Kit">
+          🛒
+          <span class="cart-count" id="cart-badge-count">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Live Match Ticker Tape -->
+  <div class="live-ticker-wrap">
+    <div class="ticker-label">
+      <span class="live-dot"></span> LIVE SCOREBOARD
+    </div>
+    <div class="ticker-track-container">
+      <div class="ticker-track" id="live-ticker-track">
+        <!-- Injected via JavaScript data -->
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-fx">
+        <div class="hero-radial-glow-1"></div>
+        <div class="hero-radial-glow-2"></div>
+        <div class="hero-grid-pattern"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content-grid">
+          <!-- Left Column -->
+          <div class="hero-intro">
+            <div class="hero-badge-row">
+              <span class="hero-pill">
+                🔥 Ministry of Youth Affairs & Sports Ecosystem
+              </span>
+              <span class="hero-gov-tag">
+                🇮🇳 Khelo Bharat • One Nation One Dream
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              Elevating <span class="text-gradient-saffron">Bharat's Sports</span> To <span class="text-gradient-tricolor">Global Dominance</span>
+            </h1>
+
+            <p class="hero-description">
+              Uniting India's timeless indigenous martial heritage with world-class Olympic excellence. Discover elite athlete development pathways, live national championships, high-performance SAI stadiums, and official sports grants.
+            </p>
+
+            <div class="hero-actions">
+              <a href="registration.html" class="btn-primary-glow">
+                <span>Join Talent Hunt & Get Sports ID</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#sports" class="btn-secondary-glass">
+                <span>Explore Sports Ecosystem</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Live Stats Row -->
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">58,400+</span>
+                <span class="hero-stat-label">Registered Athletes</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">164</span>
+                <span class="hero-stat-label">National Academies</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">₹450 Cr+</span>
+                <span class="hero-stat-label">Khelo India Grants</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Stage & Dynamic Champion Card -->
+          <div class="hero-visual-card">
+            <div class="hero-arena-stage">
+              <div class="stadium-lights"></div>
+              <div class="stadium-tracks"></div>
+
+              <!-- Floating Champion Quick View -->
+              <div class="hero-floating-athlete">
+                <div class="athlete-medal-icon">🥇</div>
+                <div class="athlete-quick-info">
+                  <h4>Neeraj Chopra</h4>
+                  <p>Olympic Gold • 89.94m Record</p>
+                </div>
+              </div>
+
+              <div class="hero-arena-headline">
+                <div class="arena-tag">KREEDA NATIONAL HUB 2026</div>
+                <h3>Empowering 1.4 Billion Sporting Aspirations</h3>
+                <div class="arena-live-chips">
+                  <span class="arena-chip">⚡ Olympic Podium Scheme</span>
+                  <span class="arena-chip">🏹 Traditional Sports</span>
+                  <span class="arena-chip">🏟️ 140+ SAI Centers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE CHAMPIONSHIPS & SCOREBOARDS -->
+    <section class="section-wrapper alt-bg" id="live-scores">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Real-Time Action</span>
+          <h2 class="section-title">National Championships Live Centre</h2>
+          <p class="section-subtitle">
+            Follow point-by-point live match updates, national games leaderboards, and key match milestones across senior and junior federations.
+          </p>
+        </div>
+
+        <div class="scoreboard-grid" id="scoreboard-grid">
+          <!-- Dynamically populated via data.js & main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- OLYMPIC & INDIGENOUS SPORTS SHOWCASE -->
+    <section class="section-wrapper" id="sports">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Sports Ecosystem</span>
+          <h2 class="section-title">Olympic & Indigenous Indian Sports</h2>
+          <p class="section-subtitle">
+            Explore official rules, training guidelines, national governing bodies, and championship records across India's prominent sporting disciplines.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-tab-btn active" data-filter="all">All Disciplines (12)</button>
+          <button class="filter-tab-btn" data-filter="indigenous">🇮🇳 Indigenous Indian</button>
+          <button class="filter-tab-btn" data-filter="olympic">🥇 Olympic & Global</button>
+        </div>
+
+        <!-- Sports Grid -->
+        <div class="sports-grid" id="sports-grid">
+          <!-- Populated dynamically from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- WALL OF CHAMPIONS (ATHLETES SPOTLIGHT) -->
+    <section class="section-wrapper alt-bg" id="champions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hall of Fame</span>
+          <h2 class="section-title">Wall of National Champions</h2>
+          <p class="section-subtitle">
+            Honouring the trailblazers who have raised the Tricolor high on the world's grandest podiums.
+          </p>
+        </div>
+
+        <div class="athletes-grid" id="athletes-grid">
+          <!-- Populated from data.js -->
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <a href="athletes.html" class="btn-primary-glow">
+            <span>Explore Complete Athlete Directory & Medal Tally →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NATIONAL STADIUMS & SAI HIGH-PERFORMANCE HUBS -->
+    <section class="section-wrapper" id="stadiums">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">World-Class Infrastructure</span>
+          <h2 class="section-title">National Stadiums & High-Performance Centres</h2>
+          <p class="section-subtitle">
+            Find Sports Authority of India (SAI) accredited stadiums, synthetic athletic tracks, Olympic swimming pools, and high-altitude training facilities.
+          </p>
+        </div>
+
+        <!-- Stadium Search & Filters -->
+        <div class="stadium-search-bar">
+          <div class="stadium-input-group">
+            <span>🔍</span>
+            <input type="text" id="stadium-search-input" placeholder="Search stadium by name or sport...">
+          </div>
+          <div class="stadium-input-group" style="max-width: 280px;">
+            <span>📍</span>
+            <select id="stadium-state-filter">
+              <option value="all">All States & Territories</option>
+              <option value="Delhi">Delhi NCR</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Punjab">Punjab</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="stadiums-grid" id="stadiums-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- GOVERNMENT SCHEMES & FINANCIAL ASSISTANCE -->
+    <section class="section-wrapper alt-bg" id="schemes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Empowerment & Welfare</span>
+          <h2 class="section-title">National Schemes & Athlete Grants</h2>
+          <p class="section-subtitle">
+            Direct funding, out-of-pocket allowances, world-class coaching grants, and pension schemes for Indian athletes from grassroots to podium.
+          </p>
+        </div>
+
+        <div class="schemes-grid" id="schemes-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFICIAL MERCHANDISE STORE -->
+    <section class="section-wrapper" id="store">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Official Merchandise</span>
+          <h2 class="section-title">Team India Athlete Store</h2>
+          <p class="section-subtitle">
+            Gear up with authentic Team India jerseys, tournament-grade equipment, and commemorative sports memorabilia.
+          </p>
+        </div>
+
+        <div class="store-grid" id="store-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODALS & DRAWERS -->
+
+  <!-- 1. Sport Deep-Dive Modal -->
+  <div class="modal-backdrop" id="sport-detail-modal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div id="sport-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- 2. Athlete Spotlight Modal -->
+  <div class="modal-backdrop" id="athlete-detail-modal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div id="athlete-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- 3. Quick Command Search Palette (Ctrl+K) -->
+  <div class="modal-backdrop" id="search-palette-modal">
+    <div class="modal-dialog search-palette-dialog">
+      <div class="search-bar-wrap">
+        <span style="font-size: 1.2rem;">🔍</span>
+        <input type="text" id="palette-search-input" placeholder="Type sport, athlete name, stadium, or scheme..." autofocus>
+        <kbd class="kbd-shortcut">ESC</kbd>
+      </div>
+      <div class="search-results-list" id="palette-results-list">
+        <!-- Dynamic search results -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Slide-out Shopping Cart Drawer -->
+  <div class="cart-drawer-backdrop" id="cart-drawer-backdrop">
+    <div class="cart-drawer">
+      <div class="cart-drawer-head">
+        <h3>Team India Sports Kit (🛒)</h3>
+        <button id="btn-cart-close" style="background: none; color: white; font-size: 1.3rem; cursor: pointer;">✕</button>
+      </div>
+      <div class="cart-drawer-body" id="cart-items-container">
+        <!-- Populated via main.js -->
+      </div>
+      <div class="cart-drawer-foot">
+        <div class="cart-total-row">
+          <span>Subtotal:</span>
+          <span id="cart-subtotal-val" style="color: var(--olympic-gold);">₹0</span>
+        </div>
+        <button class="btn-primary-glow" id="btn-checkout" style="width: 100%; justify-content: center;">
+          Checkout Team India Kit
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="emblem-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="font-size: 1.2rem;">KREEDA INDIA</span>
+              <span class="brand-tagline">National Sports Portal</span>
+            </div>
+          </div>
+          <p>
+            An official digital sports initiative fostering grassroots talent discovery, state-of-the-art sports science, and championship mindset across Bharat.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" title="Twitter / X">𝕏</a>
+            <a href="#" class="social-btn" title="YouTube Sports">▶</a>
+            <a href="#" class="social-btn" title="Instagram">📷</a>
+            <a href="#" class="social-btn" title="Telegram Sports Alerts">✈</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ecosystem</h4>
+          <ul class="footer-links">
+            <li><a href="#sports">Olympic Sports</a></li>
+            <li><a href="#sports">Indigenous Games</a></li>
+            <li><a href="athletes.html">Hall of Fame</a></li>
+            <li><a href="events.html">National Games 2026</a></li>
+            <li><a href="#stadiums">SAI Training Centers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Athletes & Grants</h4>
+          <ul class="footer-links">
+            <li><a href="registration.html">Khelo Bharat Registration</a></li>
+            <li><a href="#schemes">TOPS Scheme Portal</a></li>
+            <li><a href="#schemes">Pension & Welfare</a></li>
+            <li><a href="#">National Anti-Doping (NADA)</a></li>
+            <li><a href="#">Coach Certification</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Athlete Support 24x7</h4>
+          <div class="footer-helpline-box">
+            <div class="helpline-title">Toll-Free National Sports Helpline</div>
+            <div class="helpline-number">1800-202-KREEDA</div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">
+            Dedicated helpline for athlete trial queries, SAI admission guidance, and grant disbursements.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 KREEDA INDIA • Government of India Sports Ecosystem Portal. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Anti-Doping Code</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
